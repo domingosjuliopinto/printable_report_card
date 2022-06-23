@@ -10,11 +10,17 @@ app.use(express.json())
 app.use(cors())
 app.use(cookieParser())
 
+//Routes
+app.use('/',require('./routes/teacherrouter'))
+app.use('/',require('./routes/studentrouter'))
+app.use('/',require('./routes/se_routes/cmpn3router'))
+app.use('/',require('./routes/se_routes/cmpn4router'))
+
 //Connect to mongodb
 const URI = process.env.MONGODB_URL
 mongoose.connect(URI,{
-    useCreateIndex: true,
-    useFindAndModify:false,
+    //useCreateIndex: true,
+    //useFindAndModify:false,
     useNewUrlParser: true,
     useUnifiedTopology:true
 },err=>{
