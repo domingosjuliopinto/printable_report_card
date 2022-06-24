@@ -1,0 +1,79 @@
+.profile_page{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(10%);
+}
+.profile_page .col-left{
+    max-width: 400px;
+    min-width: 300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.profile_page .col-left h2{
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: black;
+    margin: 10px 0;
+}
+.profile_page .col-left label{
+    display: block;
+    margin-top: 5px;
+    color: white;
+}
+.profile_page .col-left input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    background: #fee;
+    padding: 0 5px;
+}
+.profile_page .col-left button{
+    background: #333;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin: 10px 0;
+}
+
+.profile_page .col-right{
+    max-width: 400px;
+    min-width: 300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.profile_page .col-right h2{
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: black;
+    margin: 10px 0;
+}
+.profile_page .col-right label{
+    display: block;
+    margin-top: 5px;
+    color: white;
+}
+.profile_page .col-right input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    background: #fee;
+    padding: 0 5px;
+}
+.profile_page .col-right button{
+    background: #333;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin: 10px 0;
+}

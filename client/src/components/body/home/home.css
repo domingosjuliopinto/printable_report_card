@@ -1,0 +1,200 @@
+.home{
+    width: 600px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+
+.home h2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+    letter-spacing: 1.3px;
+}
+
+.home h4{
+    color: white;
+}
+
+.home button{
+    background: #191919;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-radius: 3px;
+    margin-top: 15px;
+  }
+
+.home a{
+    background: none;
+    color:white;
+}
+
+/*------------------------*/
+
+.hbox{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    background: #191919;
+    text-align: center;
+  }
+  .hbox h1{
+    color: white;
+    font-weight: 500;
+    font-family: arial;
+    background: #191919;
+  }
+  
+  .hbox p{
+    color: white;
+    font-family: arial;
+  }
+  
+  .hbox a:link {
+    color: lightgrey;
+  }
+  
+  .hbox a:visited {
+    color: yellow;
+  }
+  
+  .hbox a:hover {
+    color: hotpink;
+  }
+  
+  .hbox a:active {
+    color: lightblue;
+  }
+  
+  .hbox input[type = "text"],.hbox input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+
+  .hbox input[type = "text"]:focus,.hbox input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .hbox input[type = "number"],.hbox input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .hbox input[type = "email"]:focus,.hbox input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .hbox input[type = "email"],.hbox input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .hbox input[type = "number"]:focus,.hbox input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .hbox input[type = "submit"]{
+    border:0;
+    background: #191919;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .hbox input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+  
+  .back input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: left;
+    border: 2px solid #ff0000;
+    padding: 5px 15px;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.25s;
+    cursor: pointer;
+    transform: translateX(-180%);
+  }
+  
+  .back .translate1{
+    transform: translate(-15%,60%);
+  }
+  
+  .back input[type = "submit"]:hover{
+    background: #ff0000;
+  }
+  
+  .back a:link {
+    color: lightgrey;
+    background: none;
+  }
+  
+  .back a:visited {
+    color: yellow;
+    background: none;
+  }
+  
+  .back a:hover {
+    color: hotpink;
+    background: none;
+  }
+  
+  .back a:active {
+    color: lightblue;
+    background: none;
+  }
+  

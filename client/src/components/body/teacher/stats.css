@@ -1,0 +1,97 @@
+.esback input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: left;
+    border: 2px solid #ff0000;
+    padding: 5px 15px;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.25s;
+    cursor: pointer;
+    transform: translateX(-700px);
+    
+}
+
+.esback input[type = "submit"]:hover{
+    background: #ff0000;
+}
+
+.passfail{
+    width: 20%;
+    height: 251px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.passfail li{
+    font-size: 22px;
+    padding: 2px;
+    transform: translateY(-40px);
+}
+
+.flexoutput{
+    width:49.7% ;
+    border: 2px solid lightsalmon;
+    transform: translate(305px,-250px);
+    height: 498px;
+    color: white;
+    text-align: center;
+}
+
+.flexoutput li{
+    padding: 2px;
+    font-size: 20px;
+}
+
+.flexchoice{
+    width: 29.5%;
+    background-color: lightblue;
+    transform: translate(1065px,-772px);
+    height: 500px;
+}
+
+.flexchoice input[type = "number"]{
+    border:0;
+    background: wheat;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    transform: translateY(30px);
+  }
+  
+  .flexchoice input[type = "number"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+
+  .flexchoice select{
+    border:0;
+    background: wheat;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .flexchoice select{
+    width: 280px;
+    border-color: #2ecc71;
+  }

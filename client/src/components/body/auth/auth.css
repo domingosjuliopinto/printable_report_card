@@ -1,0 +1,253 @@
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    background: #191919;
+    text-align: center;
+  }
+  
+  .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: arial;
+    background: #191919;
+  }
+  
+  .box p{
+    color: white;
+    font-family: arial;
+  }
+  
+  .box a:link {
+    color: lightgrey;
+  }
+  
+  .box a:visited {
+    color: yellow;
+  }
+  
+  .box a:hover {
+    color: hotpink;
+  }
+  
+  .box a:active {
+    color: lightblue;
+  }
+  
+  .box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .box input[type = "number"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .box input[type = "email"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .box input[type = "email"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .box input[type = "number"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .box input[type = "submit"]{
+    border:0;
+    background: #191919;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+
+  .box select:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .box select{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .box option:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  
+  .box option{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color:black;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+
+  .box ::placeholder{
+    color: white;
+    opacity: 0.7;
+  }
+
+
+  /* ------------- Forgot Password --------------- */
+.fg_pass{
+  transform:translateY(20%);
+}
+  
+.fg_pass h2{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px 0;
+  letter-spacing: 1.3px;
+}
+.fg_pass .row{
+  max-width: 500px;
+  margin: auto;
+  padding: 0 10px;
+}
+.fg_pass .row input{
+  width: 100%;
+  height: 45px;
+  border: 1px solid #000000;
+  outline: none;
+  padding: 0 15px;
+  border-radius: 3px;
+  margin: 5px 0;
+  background: white;
+}
+.fg_pass .row button{
+  background: #191919;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+.fg_pass .row label{
+  color: white;
+}
+
+.fg_pass .row p{
+  color: white;
+}
+
+.back input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 5px auto;
+  text-align: left;
+  border: 2px solid #ff0000;
+  padding: 5px 15px;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  transition: 0.25s;
+  cursor: pointer;
+  transform: translateX(-180%);
+}
+
+.back .translate1{
+  transform: translate(-15%,60%);
+}
+
+.back input[type = "submit"]:hover{
+  background: #ff0000;
+}
+
+.back a:link {
+  color: lightgrey;
+  background: none;
+}
+
+.back a:visited {
+  color: yellow;
+  background: none;
+}
+
+.back a:hover {
+  color: hotpink;
+  background: none;
+}
+
+.back a:active {
+  color: lightblue;
+  background: none;
+}

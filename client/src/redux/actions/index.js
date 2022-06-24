@@ -1,0 +1,9 @@
+const ACTIONS = {
+    LOGIN: 'LOGIN',
+    GET_TOKEN: 'GET_TOKEN',
+    GET_USER: 'GET_USER',
+    GET_SEM3:'GET_SEM3',
+    GET_SEM4:'GET_SEM4',
+    GET_ALL_STUDENTS: 'GET_ALL_STUDENTS'}
+
+export default ACTIONS
