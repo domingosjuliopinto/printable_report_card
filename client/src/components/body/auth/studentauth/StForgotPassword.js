@@ -37,7 +37,7 @@ function StForgotPassword() {
             return setData({...data, err: 'Invalid emails.', success: ''})
             
         try {
-            const res = await axios.post('http://localhost:5000/prcv2/fpid', {email})
+            const res = await axios.post('http://localhost:5000/fpid', {email})
 
             return setData({...data, err: '', success: res.data.msg})
         } catch (err) {

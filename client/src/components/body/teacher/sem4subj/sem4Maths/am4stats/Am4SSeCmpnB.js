@@ -14,7 +14,7 @@ function Am4SSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsam4(token,subject).then(res=>{
+            fetchsam4(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])

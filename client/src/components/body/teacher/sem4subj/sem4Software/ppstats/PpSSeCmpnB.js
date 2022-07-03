@@ -14,7 +14,7 @@ function PpSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchspp(token,subject).then(res=>{
+            fetchspp(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])

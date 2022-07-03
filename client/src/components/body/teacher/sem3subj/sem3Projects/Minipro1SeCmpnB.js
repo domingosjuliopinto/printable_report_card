@@ -44,7 +44,7 @@ function Minipro1SeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchminipro1(token,subject).then(res=>{
+            fetchminipro1(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

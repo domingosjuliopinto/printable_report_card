@@ -14,7 +14,7 @@ function AoaSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsaoa(token,subject).then(res=>{
+            fetchsaoa(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])

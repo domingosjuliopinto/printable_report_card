@@ -33,7 +33,7 @@ function Login(){
            localStorage.setItem('firstLogin', true)
 
             dispatch(dispatchLogin())
-            history.push("/")
+            history("/")
 
         } catch (err) {
             err.response.data.msg && 

@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsdlcoa,dispatchStatssem3} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function DlcoaGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function DlcoaGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsdlcoa(token,subject).then(res=>{
+            fetchsdlcoa(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function DlcoaGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>DLCOA</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

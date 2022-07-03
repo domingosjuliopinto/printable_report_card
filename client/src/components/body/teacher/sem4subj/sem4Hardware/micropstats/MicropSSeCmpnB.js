@@ -14,7 +14,7 @@ function MicropSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsmicrop(token,subject).then(res=>{
+            fetchsmicrop(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])

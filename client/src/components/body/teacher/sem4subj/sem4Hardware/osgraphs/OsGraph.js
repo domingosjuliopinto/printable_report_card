@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsos,dispatchStatssem4} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function OsGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function OsGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsos(token,subject).then(res=>{
+            fetchsos(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function OsGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>OS</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchscg,dispatchStatssem3} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function CgGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function CgGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchscg(token,subject).then(res=>{
+            fetchscg(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function CgGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>CG</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

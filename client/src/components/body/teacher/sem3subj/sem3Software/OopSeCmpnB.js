@@ -44,7 +44,7 @@ function OopSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchoop(token,subject).then(res=>{
+            fetchoop(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

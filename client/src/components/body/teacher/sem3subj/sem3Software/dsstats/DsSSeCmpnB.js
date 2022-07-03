@@ -14,7 +14,7 @@ function DsSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsds(token,subject).then(res=>{
+            fetchsds(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])

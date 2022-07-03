@@ -46,7 +46,7 @@ function DlcoaSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchdlcoa(token,subject).then(res=>{
+            fetchdlcoa(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

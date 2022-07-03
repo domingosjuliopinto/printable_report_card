@@ -21,7 +21,7 @@ function Sem4RC(){
     const dispatch = useDispatch()
     useEffect(()=>{
         const StudentLogin=localStorage.getItem('StudentLogin')
-        return fetchsem4(token,StudentLogin).then(res=>{
+            fetchsem4(token,StudentLogin).then(res=>{
             dispatch(dispatchGetsem4(res))
         })
     },[token,dispatch])

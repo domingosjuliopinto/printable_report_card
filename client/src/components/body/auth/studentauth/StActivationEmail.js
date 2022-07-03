@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
 import {showErrMsg, showSuccessMsg} from '../../../utils/notification/Notification'
@@ -8,7 +8,7 @@ function StActivationEmail() {
     const [err, setErr] = useState('')
     const [success, setSuccess] = useState('')
 
-    useEffect(() => {
+    const handleClick = async () => {
         if(activation_token){
             const activationEmail = async () => {
                 try {
@@ -20,12 +20,13 @@ function StActivationEmail() {
             }
             activationEmail()
         }
-    },[activation_token])
+    }
 
     return (
         <div className="active_page">
             {err && showErrMsg(err)}
             {success && showSuccessMsg(success)}
+            <button onClick={()=>handleClick()}>Activate</button>
         </div>
     )
 }

@@ -14,7 +14,7 @@ function DbmsSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsdbms(token,subject).then(res=>{
+            fetchsdbms(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])

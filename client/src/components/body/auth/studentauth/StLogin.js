@@ -34,7 +34,7 @@ function StLogin(){
            localStorage.setItem('StudentLogin', true)
 
             dispatch(dispatchLogin())
-            history.push("/")
+            history("/")
 
         } catch (err) {
             err.response.data.msg && 

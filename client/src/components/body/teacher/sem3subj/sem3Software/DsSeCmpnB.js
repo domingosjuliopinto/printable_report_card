@@ -46,7 +46,7 @@ function DsSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchds(token,subject).then(res=>{
+            fetchds(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

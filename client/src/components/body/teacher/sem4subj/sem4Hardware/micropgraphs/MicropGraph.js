@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsmicrop,dispatchStatssem4} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function MicropGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function MicropGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsmicrop(token,subject).then(res=>{
+            fetchsmicrop(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function MicropGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>Microprocessor</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

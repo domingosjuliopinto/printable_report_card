@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsaoa,dispatchStatssem4} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function AoaGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function AoaGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsaoa(token,subject).then(res=>{
+            fetchsaoa(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function AoaGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>AOA</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

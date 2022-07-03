@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsdbms,dispatchStatssem4} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function DbmsGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function DbmsGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsdbms(token,subject).then(res=>{
+            fetchsdbms(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function DbmsGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>DBMS</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

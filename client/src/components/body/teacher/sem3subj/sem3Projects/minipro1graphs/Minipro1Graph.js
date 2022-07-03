@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsminipro1,dispatchStatssem3} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function Minipro1Graph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function Minipro1Graph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsminipro1(token,subject).then(res=>{
+            fetchsminipro1(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function Minipro1Graph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>Mini Project 1</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

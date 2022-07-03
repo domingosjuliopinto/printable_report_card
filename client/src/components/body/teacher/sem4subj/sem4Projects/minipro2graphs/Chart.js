@@ -2,7 +2,7 @@ import React from 'react';
 import {Bar, Pie} from 'react-chartjs-2';
 import {useSelector} from 'react-redux';
 
-const Chart = () =>{
+const ReactChart = () =>{
     const marks = useSelector(state => state.marks)
     const {sem4} = marks
 
@@ -165,4 +165,4 @@ const Chart = () =>{
     )
 }
 
-export default Chart
+export default ReactChart

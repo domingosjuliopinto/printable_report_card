@@ -14,7 +14,7 @@ function OsSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsos(token,subject).then(res=>{
+            fetchsos(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])

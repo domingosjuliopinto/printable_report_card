@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchspp,dispatchStatssem4} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function PpGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function PpGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchspp(token,subject).then(res=>{
+            fetchspp(token,subject).then(res=>{
             dispatch(dispatchStatssem4(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function PpGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>PP</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

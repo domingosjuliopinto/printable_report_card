@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {fetchsoop,dispatchStatssem3} from '../../../../../../redux/actions/statsAction'
 import '../../../stats.css'
 
-import Chart from './Chart'
+import ReactChart from './Chart'
 
 function OopGraph(){
     const auth = useSelector(state => state.auth)
@@ -13,7 +13,7 @@ function OopGraph(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsoop(token,subject).then(res=>{
+            fetchsoop(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])
@@ -27,7 +27,7 @@ function OopGraph(){
             </div>
             <h1 align="center" style={{ color: 'white' }}>OOP</h1>
             <div>
-                <Chart/>
+                <ReactChart/>
             </div>
         </div>
     )

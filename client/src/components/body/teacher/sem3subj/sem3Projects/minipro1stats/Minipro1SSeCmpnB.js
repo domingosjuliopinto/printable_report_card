@@ -14,7 +14,7 @@ function Minipro1SSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsminipro1(token,subject).then(res=>{
+            fetchsminipro1(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])

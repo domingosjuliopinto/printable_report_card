@@ -46,7 +46,7 @@ function CgSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchcg(token,subject).then(res=>{
+            fetchcg(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

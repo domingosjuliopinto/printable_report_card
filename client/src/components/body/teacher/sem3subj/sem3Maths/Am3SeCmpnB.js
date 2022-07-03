@@ -46,7 +46,7 @@ function Am3SeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetcham3(token,subject).then(res=>{
+            fetcham3(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

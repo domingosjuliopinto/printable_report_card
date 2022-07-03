@@ -1,8 +1,11 @@
 import React from 'react';
 import {Bar, Pie} from 'react-chartjs-2';
 import {useSelector} from 'react-redux';
+import { Chart, registerables} from 'chart.js';
 
-const Chart = () =>{
+Chart.register(...registerables);
+
+const ReactChart = () =>{
     const marks = useSelector(state => state.marks)
     const {sem3} = marks
 
@@ -165,4 +168,4 @@ const Chart = () =>{
     )
 }
 
-export default Chart
+export default ReactChart

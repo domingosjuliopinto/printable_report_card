@@ -14,7 +14,7 @@ function CgSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchscg(token,subject).then(res=>{
+            fetchscg(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])

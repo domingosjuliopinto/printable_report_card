@@ -14,7 +14,7 @@ function OopSSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchsoop(token,subject).then(res=>{
+            fetchsoop(token,subject).then(res=>{
             dispatch(dispatchStatssem3(res))
         })
     },[token,subject,dispatch])

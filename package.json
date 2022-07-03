@@ -26,11 +26,11 @@
     "googleapis": "^104.0.0",
     "jsonwebtoken": "^8.5.1",
     "localStorage": "^1.0.4",
-    "mongoose": "^6.4.0",
+    "mongoose": "^6.4.2",
     "node-fetch": "^3.2.6",
-    "nodemailer": "^6.7.5"
+    "nodemailer": "^6.7.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.18"
   }
 }

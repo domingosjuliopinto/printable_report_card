@@ -46,7 +46,7 @@ function DbmsSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchdbms(token,subject).then(res=>{
+            fetchdbms(token,subject).then(res=>{
             dispatch(dispatchMarkssem4(res))
         })
     },[token,subject,dispatch])

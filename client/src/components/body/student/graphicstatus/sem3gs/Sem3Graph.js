@@ -12,13 +12,13 @@ function Sem3Graph(){
     const dispatch = useDispatch()
     useEffect(()=>{
         const StudentLogin=localStorage.getItem('StudentLogin')
-        return fetchsem3(token,StudentLogin).then(res=>{
+            fetchsem3(token,StudentLogin).then(res=>{
             dispatch(dispatchGetsem3(res))
         })
     },[token,dispatch])
 
     useEffect(()=>{
-        return fetchcompare3(token).then(res=>{
+            fetchcompare3(token).then(res=>{
             dispatch(dispatchCompare(res))
         })
     },[token,dispatch])

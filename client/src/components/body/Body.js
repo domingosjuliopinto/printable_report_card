@@ -144,7 +144,7 @@ function Body(){
 
                 <Route path="/stuser/pid/:ktoken" element={isLogged ? <NotFound/> : <KnowPID/>} exact />
                 <Route path="/stuser/reset/:token" element={isLogged ? <NotFound/> : <StResetPass/>} exact />
-                <Route path="/stuser/activate/:activation_token" element={StActivationEmail} exact />
+                <Route path="/stuser/activate/:activation_token" element={<StActivationEmail/>} exact />
 
                 <Route path="/" element={isLogged ? <Home/> : <Default/>} exact />
                 <Route path="/profile" element={isLogged ? <Profile/> :<NotFound/>} exact />

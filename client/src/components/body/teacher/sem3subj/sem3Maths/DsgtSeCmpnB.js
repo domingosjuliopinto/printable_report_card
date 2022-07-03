@@ -46,7 +46,7 @@ function DsgtSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchdsgt(token,subject).then(res=>{
+            fetchdsgt(token,subject).then(res=>{
             dispatch(dispatchMarkssem3(res))
         })
     },[token,subject,dispatch])

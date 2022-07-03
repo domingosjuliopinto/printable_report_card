@@ -21,7 +21,7 @@ function Sem3RC(){
     const dispatch = useDispatch()
     useEffect(()=>{
         const StudentLogin=localStorage.getItem('StudentLogin')
-        return fetchsem3(token,StudentLogin).then(res=>{
+            fetchsem3(token,StudentLogin).then(res=>{
             dispatch(dispatchGetsem3(res))
         })
     },[token,dispatch])

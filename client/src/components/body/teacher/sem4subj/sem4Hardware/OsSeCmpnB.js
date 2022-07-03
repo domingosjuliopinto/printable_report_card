@@ -46,7 +46,7 @@ function OsSeCmpnB(){
 
     const dispatch = useDispatch()
     useEffect(()=>{
-        return fetchos(token,subject).then(res=>{
+            fetchos(token,subject).then(res=>{
             dispatch(dispatchMarkssem4(res))
         })
     },[token,subject,dispatch])
