@@ -19,8 +19,6 @@ app.use('/',require('./routes/se_routes/cmpn4router'))
 //Connect to mongodb
 const URI = process.env.MONGODB_URL
 mongoose.connect(URI,{
-    //useCreateIndex: true,
-    //useFindAndModify:false,
     useNewUrlParser: true,
     useUnifiedTopology:true
 },err=>{
