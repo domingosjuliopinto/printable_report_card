@@ -6,11 +6,11 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 30px;
 }
 
 header h1{
     color: antiquewhite;
+    padding: 0.5vw;
 }
 
 header a{
